@@ -185,11 +185,17 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
+	<groupId>org.neo4j</groupId>
+	<artifactId>neo4j-kernel</artifactId>
+	<version>2.3.0-M01</version>
+        </dependency>
+        <dependency>
             <groupId>org.neo4j</groupId>
             <artifactId>server-api</artifactId>
             <version>${neo4j.version}</version>
             <scope>provided</scope>
         </dependency>
+        
         <dependency>
             <groupId>org.neo4j</groupId>
             <artifactId>neo4j-io</artifactId>
@@ -394,6 +400,13 @@
                 <enabled>true</enabled>
             </releases>
         </repository>
+      <repository>
+        <id>neo4j</id>
+        <url>http://m2.neo4j.org/content/repositories/releases/</url>
+        <releases>
+        <enabled>true</enabled>
+        </releases>
+  </repository>
     </repositories>
     <profiles>
         <profile>
